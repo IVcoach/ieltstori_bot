@@ -1,0 +1,26 @@
+[
+  {
+    "level": "A1",
+    "question": "What is your name?",
+    "options": ["I am a doctor", "My name is John", "Yes, I am", "In the park"],
+    "answer": "My name is John"
+  },
+  {
+    "level": "A2",
+    "question": "I have been living here _____ five years.",
+    "options": ["since", "from", "for", "by"],
+    "answer": "for"
+  },
+  {
+    "level": "B1",
+    "question": "If I _____ time, I would travel more.",
+    "options": ["have", "had", "would have", "will have"],
+    "answer": "had"
+  },
+  {
+    "level": "B2",
+    "question": "Despite _____ hard, he didn’t pass the exam.",
+    "options": ["study", "to study", "studied", "studying"],
+    "answer": "studying"
+  }
+]
