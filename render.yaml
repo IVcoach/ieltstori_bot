@@ -2,6 +2,19 @@ services:
   - type: web
     name: ieltstori-bot
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "python bot.py"
+    runtime: python-3.11.4  # Specify Python version
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: python bot.py
     autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: your_telegram_bot_token_here
+      - key: WEBHOOK_URL
+        sync: false  # Will be set automatically by Render
+      - key: WEBHOOK_SECRET
+        generateValue: true  # Auto-generate secure secret
+      - key: PORT
+        value: 8000  # Standard port for Python web services
+    healthCheckPath: /health
+    plan: free  # Or "starter" if you need more resources
