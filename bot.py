@@ -58,7 +58,7 @@ async def handle_answer(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(msg)
         return ConversationHandler.END
 
-app = ApplicationBuilder().token(os.environ["8023160531:AAEHGg8_CAd0ceIceT6isGNH1Am8J2wJYNs"]).build()
+app = ApplicationBuilder().token(os.environ["BOT_TOKEN"]).build()
 
 
 conv_handler = ConversationHandler(
